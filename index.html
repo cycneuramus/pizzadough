@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pizza Dough Calculator</title>
+    <link rel="stylesheet"
+          href="https://unpkg.com/@picocss/pico@2/css/pico.min.css" />
+    <style>
+      main { max-width: 920px; margin-inline: auto; }
+      article { margin-block: 1rem; }
+      .grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+      input[type="number"] { text-align: right; }
+      table tfoot th, table tfoot td { font-weight: 700; }
+
+      nav[role="banner"] {
+        padding-block: 1rem;
+        border-bottom: 1px solid var(--muted-border-color);
+        margin-bottom: 1.5rem;
+      }
+      nav .container {
+        max-width: 920px;
+        margin-inline: auto;
+      }
+      nav h1, nav p { text-align: center; margin: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="ROOT"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
+
