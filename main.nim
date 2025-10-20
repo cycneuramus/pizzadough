@@ -166,13 +166,4 @@ proc render(): VNode =
               th:
                 text fmt "{toStr(targetTotal)} g"
 
-        details:
-          summary:
-            text "Batch summary"
-          ul:
-            li:
-              text fmt"Single ball: {toStr(toFloat(state[fBallWeight]))} g"
-            li:
-              text fmt"Count: {state[fBallCount]}"
-
 setRenderer render
