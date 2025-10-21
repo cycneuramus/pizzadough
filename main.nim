@@ -126,21 +126,21 @@ proc render(): VNode =
               td:
                 text "Water"
               td:
-                text fmt "{state[fWaterPct]} %"
+                text fmt"{state[fWaterPct]} %"
               td:
                 text toStr(water)
             tr:
               td:
                 text "Salt"
               td:
-                text fmt "{state[fSaltPct]} %"
+                text fmt"{state[fSaltPct]} %"
               td:
                 text toStr(salt)
             tr:
               td:
                 text "Yeast"
               td:
-                text fmt "{state[fYeastPct]} %"
+                text fmt"{state[fYeastPct]} %"
               td:
                 text toStr(yeast)
             tr:
@@ -154,7 +154,7 @@ proc render(): VNode =
               td:
                 text "Oil"
               td:
-                text fmt "{state[fOilPct]} %"
+                text fmt"{state[fOilPct]} %"
               td:
                 text toStr(oil)
           tfoot:
@@ -164,6 +164,10 @@ proc render(): VNode =
               th:
                 text ""
               th:
-                text fmt "{toStr(targetTotal)} g"
+                text fmt"{toStr(targetTotal)} g"
+    footer:
+      small:
+        a(href = "https://github.com/cycneuramus/pizzadough"):
+          text "Source Code"
 
 setRenderer render
